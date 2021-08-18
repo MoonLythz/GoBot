@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"github.com/bwmarrin/discordgo"
-	"lets-try-go/managers"
+	"lets-try-go/events"
 	"lets-try-go/utils"
 	"os"
 	"os/signal"
@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	token = "TOKEN"
+	token = "ODE5Mzc1MTYxNTcyNTg5NjM4.YElslQ.3YgNlUIkmX1OcP97k5KdCDr0fuQ"
 )
 
 func main() {
@@ -28,7 +28,7 @@ func main() {
 		return
 	}
 	
-	managers.EventManager(discord)
+	events.EventManager(discord)
 
 	utils.Log("Opening a websocket connection to discord!")
 	err = discord.Open()

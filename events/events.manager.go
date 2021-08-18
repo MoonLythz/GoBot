@@ -1,15 +1,14 @@
-package managers
+package events
 
 import (
 	"fmt"
 	"github.com/bwmarrin/discordgo"
-	"lets-try-go/events"
 	"lets-try-go/utils"
 )
 
 var (
-	eventHandlers = []events.EventHandler{
-		events.MessageCreate(),
+	eventHandlers = []EventHandler{
+		MessageCreate(),
 	}
 )
 
